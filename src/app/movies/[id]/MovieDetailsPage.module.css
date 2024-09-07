@@ -1,0 +1,142 @@
+/* MovieDetailsPage.module.css */
+.pageContainer {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 15px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.backIcon {
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+}
+
+.movieDetailsContent {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+
+.movieImage {
+  height: 300px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.movieDetails {
+  flex: 1;
+}
+
+.trailerButton {
+  background-color: #ffc107; 
+  color: black;
+  width: 100%;
+  border: none;
+  border-radius: 0 0 8px 8px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.movieTitle {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.releaseDate {
+  font-size: 0.9rem;
+  color: #ddd;
+  margin-bottom: 20px;
+}
+
+.movieOverview {
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.favoriteSection {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.favoriteIcon {
+  font-size: 2rem;
+  color: #555;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.favoriteIconActive {
+  color: #ff4040;
+}
+
+.favoriteText {
+  font-size: 1rem;
+  color: white;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* Recommendations Section */
+.recommendations {
+  margin-top: 30px;
+}
+
+.recommendationsTitle {
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.recommendationCard {
+  margin-bottom: 15px;
+}
+
+@media (max-width: 767px) {
+  .movieTitle {
+    font-size: 1.5rem;
+  }
+
+  .releaseDate {
+    font-size: 0.8rem;
+  }
+
+  .movieOverview {
+    font-size: 0.9rem;
+  }
+
+  .movieImage {
+    height: 200px;
+    width: 150px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .movieTitle {
+    font-size: 1.8rem;
+  }
+
+  .releaseDate {
+    font-size: 0.85rem;
+  }
+
+  .movieOverview {
+    font-size: 1rem;
+  }
+
+  .movieImage {
+    height: 250px;
+    width: 180px;
+  }
+}
